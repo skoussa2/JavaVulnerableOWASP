@@ -25,6 +25,7 @@ jobs:
     - name: Anchore Container Scan
       uses: anchore/scan-action@v1.0.7
       with:
-       image-reference: "localbuild/DockerFile:latest"
+       image-reference: "localbuild/testimage:latest"
+       dockerfile-path: "Dockerfile"
 
 
